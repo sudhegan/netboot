@@ -1,0 +1,19 @@
+{
+  "ignition": {
+    "version": "3.3.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "wheel",
+          "sudo"
+        ],
+        "name": "sudhegan",
+        "sshAuthorizedKeys": [
+          "SHA256:XF4/krN8oxuPiX3rvA+1WL40HjsqAut8kVRgiAIH0P8"
+        ]
+      }
+    ]
+  }
+}
