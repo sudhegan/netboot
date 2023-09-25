@@ -3,7 +3,7 @@
 set STREAM stable
 set VERSION 38.20230902.3.0
 set INSTALLDEV /dev/sda
-set CONFIGURL https://example.com/config.ign
+set CONFIGURL https://github.com/sudhegan/netboot/raw/master/example.ign
 
 set BASEURL https://builds.coreos.fedoraproject.org/prod/streams/${STREAM}/builds/${VERSION}/x86_64
 
