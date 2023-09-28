@@ -7,12 +7,30 @@
       {
         "groups": [
           "wheel",
-          "sudo"
+          "sudo",
+          "docker"
         ],
         "name": "sudhegan",
         "sshAuthorizedKeys": [
-          "SHA256:XF4/krN8oxuPiX3rvA+1WL40HjsqAut8kVRgiAIH0P8"
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMI2k7kSb5YiDTRRIlmZkEHtdV90+5f9OpcurIYHcTiU sudhegan@outlook.in"
         ]
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "mask": true,
+        "name": "podman.service"
+      },
+      {
+        "enabled": true,
+        "name": "docker.service"
+      },
+      {
+        "contents": "[Unit]\nDescription=Post docker iptables firewall rules\nAfter=docker.service\n\n[Service]\nType=oneshot\nExecStart=/etc/sysconfig/iptables-post-docker\n\n[Install]\nWantedBy=basic.target\n",
+        "enabled": true,
+        "name": "iptables-post-docker.service"
       }
     ]
   }
