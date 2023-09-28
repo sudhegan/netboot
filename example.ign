@@ -26,11 +26,6 @@
       {
         "enabled": true,
         "name": "docker.service"
-      },
-      {
-        "contents": "[Unit]\nDescription=Post docker iptables firewall rules\nAfter=docker.service\n\n[Service]\nType=oneshot\nExecStart=/etc/sysconfig/iptables-post-docker\n\n[Install]\nWantedBy=basic.target\n",
-        "enabled": true,
-        "name": "iptables-post-docker.service"
       }
     ]
   }
