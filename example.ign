@@ -11,9 +11,22 @@
           "docker"
         ],
         "name": "sudhegan",
+        "passwordHash": "$y$j9T$ykLY.A2.kEiwu9iCmgzY0.$4B6xQJvZBUDOrNoj914yBvj.H5A2Egx.Lkl7.S2ecY5",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILBSXeDozdfpmc2Al3FwgZtIG4rMd25EkKy5TtLBhci3 sudhegan@uvagai.in"
         ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,uvagai.in"
+        },
+        "mode": 420
       }
     ]
   },
