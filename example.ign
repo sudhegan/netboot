@@ -24,7 +24,7 @@
         "path": "/etc/hostname",
         "contents": {
           "compression": "",
-          "source": "data:,uvagai.in"
+          "source": "data:,tptaidc.in"
         },
         "mode": 420
       }
